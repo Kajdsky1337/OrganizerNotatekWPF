@@ -1,0 +1,57 @@
+﻿<Window
+    Height="450"
+    Title="MainWindow"
+    Width="800"
+    Background="Lavender"
+    mc:Ignorable="d"
+    x:Class="ProjektOrganizerNotatek.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ProjektOrganizerNotatek"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <Button
+            Click="CreateNote_Button_Clicked"
+            Content="Create Note"
+            Grid.Column="0"
+            Grid.Row="0"
+            Margin="25,23,25,10"
+            x:Name="CreateNote_Button" />
+        <Button
+            Click="ShowNotes_Button_Clicked"
+            Content="Show Notes"
+            Grid.Column="1"
+            Grid.Row="0"
+            Margin="25,23,25,10"
+            x:Name="ShowNotes_Button" />
+        <Button
+            Click="DeleteNotes_Button_Clicked"
+            Content="Delete Notes"
+            Grid.Column="2"
+            Grid.Row="0"
+            Margin="25,23,25,10"
+            x:Name="DeleteNotes_Button" />
+        <Button
+            Click="EditNotes_Button_Clicked"
+            Content="Edit Notes"
+            Grid.Column="3"
+            Grid.Row="0"
+            Margin="25,23,25,10"
+            x:Name="EditNotes_Button" />
+    </Grid>
+</Window>
